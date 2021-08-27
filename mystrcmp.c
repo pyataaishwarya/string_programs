@@ -1,5 +1,5 @@
 #include<stdio.h>
-char *mystrcmp(char *,char *);
+int mystrcmp(char *,char *);
 int main()
 {
 	char s1[20],s2[20];
@@ -16,7 +16,7 @@ int main()
 	else
 		printf("strings are equal\n");
 }
-char *mystrcmp(char *s1,char *s2)
+int mystrcmp(char *s1,char *s2)
 {
 	for(;*s1==*s2&*s1!=0&*s2!=0;s1++,s2++);
 	return *s1-*s2;
